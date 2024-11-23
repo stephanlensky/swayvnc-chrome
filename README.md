@@ -30,8 +30,6 @@ services:
     privileged: true
     ports:
       - 5910:5910
-    devices:
-      - "/dev/dri/renderD128:/dev/dri/renderD128"
     # optional, pass a custom command as an argument to entrypoint.sh to run it under the wayland session
     entrypoint: [
         "/entrypoint.sh",
